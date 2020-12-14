@@ -1,0 +1,55 @@
+{
+  "editor.minimap.enabled": false,
+  "rewrap.wrappingColumn": 100,
+  "editor.fontLigatures": true,
+  "explorer.sortOrder": "modified",
+  "workbench.editor.highlightModifiedTabs": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "artifacts/**": true,
+    "target/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "artifacts/**": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true,
+    "target/**": true,
+    "artifacts/**": true
+  },
+  "rust-analyzer.diagnostics.disabled": ["unresolved-import"],
+  "rust-analyzer.files.watcher": "notify",
+  "rust-analyzer.updates.channel": "nightly",
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": []
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": ["source.fixAll.format"],
+  "npm.packageManager": "pnpm",
+  "prettier.packageManager": "pnpm",
+  "prettier.proseWrap": "always"
+}
